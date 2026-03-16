@@ -20,5 +20,26 @@ Contains programming books for final year modules.
 - **Category**: Book categories (Software Eng, Mobile, Web, etc.)
 - **Publisher**: Book publishers
 
+
+## 🤝 Contributing Guidelines
+
+### Pull Request Process
+- Create a branch with your student number
+- Implement your feature with tests
+- Ensure all tests pass
+- Update documentation if needed
+- Create a Pull Request to main branch
+- Request review from team lead
+- Address review comments
+- Merge after approval
+
+### Code Review Checklist
+- Follows Builder Pattern
+- Includes TDD tests
+- Proper package placement
+- Author comments included
+- No merge conflicts
+- All tests passing
+
 ## UML Diagram
 
