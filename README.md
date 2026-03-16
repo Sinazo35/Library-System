@@ -1,4 +1,5 @@
-## 3rd Year AppDev Library System
+
+# 3rd Year AppDev Library System
 
 ## Group Members
 - Leader: 1: TIYANI NGWANA      231266731 - Category and Publisher Entity
@@ -18,28 +19,7 @@ Contains programming books for final year modules.
 - **Loan**: Records of books borrowed
 - **Librarian**: Staff who manage the library
 - **Category**: Book categories (Software Eng, Mobile, Web, etc.)
-- **Publisher**: Book publishers
-
-
-## 🤝 Contributing Guidelines
-
-### Pull Request Process
-- Create a branch with your student number
-- Implement your feature with tests
-- Ensure all tests pass
-- Update documentation if needed
-- Create a Pull Request to main branch
-- Request review from team lead
-- Address review comments
-- Merge after approval
-
-### Code Review Checklist
-- Follows Builder Pattern
-- Includes TDD tests
-- Proper package placement
-- Author comments included
-- No merge conflicts
-- All tests passing
 
 ## UML Diagram
+
 
