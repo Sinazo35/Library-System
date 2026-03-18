@@ -78,20 +78,20 @@ public class Member {
         public Member build() {
 
             if (memberID == null || memberID.trim().isEmpty()) {
-                throw new IllegalArgumentException("Member ID is required");
+                throw new IllegalArgumentException("ID is required");
             }
 
             if (!memberID.matches("^M\\d{3}$")) {
-                throw new IllegalArgumentException("Member ID must be in format M001, M002, etc.");
+                throw new IllegalArgumentException("ID must be in format M001, M002, etc.");
             }
 
             if (memberName == null || memberName.trim().isEmpty()) {
-                throw new IllegalArgumentException("Member name is required");
+                throw new IllegalArgumentException("Name is required");
             }
 
             if (memberEmail != null && !memberEmail.trim().isEmpty()
                     && !memberEmail.matches("^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$")) {
-                throw new IllegalArgumentException("Member email is invalid");
+                throw new IllegalArgumentException("This email is invalid");
             }
 
             return new Member(this);
