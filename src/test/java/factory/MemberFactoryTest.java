@@ -16,7 +16,7 @@ class MemberFactoryTest {
 
         Member member = new Member.Builder("M001", "Owen Nxasana")
                 .setMemberEmail("owen@email.com")
-                .setMemberPhone("0821234567")
+                .setMemberPhone("0831234567")
                 .setMembershipDate("2026-03-18")
                 .build();
 
@@ -24,7 +24,7 @@ class MemberFactoryTest {
         assertEquals("M001", member.getMemberId());
         assertEquals("Owen Nxasana", member.getMemberName());
         assertEquals("owen@email.com", member.getMemberEmail());
-        assertEquals("0821234567", member.getMemberPhone());
+        assertEquals("0831234567", member.getMemberPhone());
         assertEquals("2026-03-18", member.getMembershipDate());
     }
 
