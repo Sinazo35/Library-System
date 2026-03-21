@@ -15,7 +15,7 @@ class MemberFactoryTest {
     void shouldCreateMemberUsingBuilder() {
 
         Member member = new Member.Builder("M001", "Owe Nxasana")
-                .setMemberEmail("owen@email.com")
+                .setMemberEmail("owe@email.com")
                 .setMemberPhone("0832234567")
                 .setMembershipDate("2026-03-18")
                 .build();
@@ -23,7 +23,7 @@ class MemberFactoryTest {
         assertNotNull(member);
         assertEquals("M001", member.getMemberId());
         assertEquals("Owe Nxasana", member.getMemberName());
-        assertEquals("owen@email.com", member.getMemberEmail());
+        assertEquals("owe@email.com", member.getMemberEmail());
         assertEquals("0832234567", member.getMemberPhone());
         assertEquals("2026-03-18", member.getMembershipDate());
     }
