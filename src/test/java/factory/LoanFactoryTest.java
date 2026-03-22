@@ -67,7 +67,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 					.build();
 		});
 	}
-
 	@Test
 	void shouldThrowExceptionWhenIssueDateIsMissing() {
 

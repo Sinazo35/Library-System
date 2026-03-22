@@ -9,7 +9,6 @@ package domain;
 import java.time.LocalDate;
 import java.util.Objects;
 import java.time.LocalDate;
-
 public class Loan {
 
     private String loanId;
