@@ -1,17 +1,17 @@
 package domain;
 
 //Book domain class
-//Author:
-//Date:
+//Author: Nomhle Njengele
+//Date: 16 March 2026
 
 
 public class Book {
     private final String isbn;
     private final String title;
-    private String author;
-    private String subject;
-    private String publisher;
-    private int publicationYear;
+    private final String author;
+    private final String subject;
+    private final String publisher;
+    private final int publicationYear;
 
     private Book(Builder builder) {
         this.isbn = builder.isbn;
@@ -21,6 +21,7 @@ public class Book {
         this.publisher = builder.publisher;
         this.publicationYear = builder.publicationYear;
     }
+
 
     @Override
     public String toString() {
@@ -71,7 +72,7 @@ public class Book {
         public Book build() {
             return new Book(this);
 
-            //End of program
+            //End of program.
             
         }
     }

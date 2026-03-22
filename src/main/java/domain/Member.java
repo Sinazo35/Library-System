@@ -1,14 +1,12 @@
 /* Member.java
    Member domain class
    Author: Nxasana Owenkosi 230240887
+   Date: 13 March 2026
 */
 package domain;
 
 import java.util.Objects;
 
-// Member domain class
-//Author: 230240887 Owenkosi Nxasana
-//Date
 
 public class Member {
 
