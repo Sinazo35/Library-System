@@ -52,7 +52,6 @@ public class Loan {
 
     // Builder Class
     public static class Builder {
-
         private String loanId;
         private LocalDate issueDate;
         private LocalDate dueDate;

@@ -25,7 +25,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 		assertEquals(LocalDate.of(2026, 4, 4), loan.getDueDate());
 		assertNull(loan.getReturnDate());
 	}
-
 	@Test
 	void shouldCreateLoanUsingFactory() {
 
@@ -53,7 +52,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 					.build();
 		});
 	}
-
 	@Test
 	void shouldThrowExceptionWhenLoanIdIsInvalid() {
 
