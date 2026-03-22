@@ -1,3 +1,10 @@
+
+/* BookTest.java
+   Book unit test class
+   Author: Nomhle Njengele (216227488)
+   Date: 13 March 2026
+*/
+
 import domain.Book;
 import factory.BookFactory;
 import org.junit.jupiter.api.Test;
