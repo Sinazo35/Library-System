@@ -80,15 +80,17 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 	@Test
 	void shouldThrowExceptionWhenDueDateIsBeforeIssueDate() {
 
+
 		assertThrows(IllegalArgumentException.class, () -> {
 			new Loan.Builder()
 					.setLoanId("L004")
 					.setIssueDate(LocalDate.now())
 					.setDueDate(LocalDate.now().minusDays(1))
 					.build();
-		});
+
+		 });
 	}
-}
+ }
 
 
 

@@ -99,7 +99,7 @@ public class Loan {
             // returnDate can be null (book not yet returned)
 
             return new Loan(this);
-        }
+         }
     }
 }
 

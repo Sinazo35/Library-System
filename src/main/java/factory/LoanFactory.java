@@ -1,4 +1,3 @@
-
 package factory;
 
 /*
@@ -17,7 +16,6 @@ public class LoanFactory {
                 .setDueDate(dueDate)
                 .setReturnDate(returnDate)
                 .build();
-
     }
 
     //End of program
