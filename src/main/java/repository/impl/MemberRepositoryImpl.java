@@ -1,16 +1,11 @@
-/* MemberRepositoryImpl.java
-   Member repository implementation
-   Author: Nomhle Njengele (216227488)
-   Date: 13 March 2026
-*/
+
 package repository.impl;
 
 import domain.Member;
 import repository.MemberRepository;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -19,7 +14,7 @@ public class MemberRepositoryImpl implements MemberRepository {
     private final Map<String, Member> storage = new HashMap<>();
 
     private String keyFor(Member member) {
-        return String.valueOf(member.hashCode());
+        return member.getMemberID();
     }
 
     @Override
@@ -45,9 +40,8 @@ public class MemberRepositoryImpl implements MemberRepository {
     }
 
     @Override
-    public List<Member> findAll() {
-        return new ArrayList<>(storage.values());
+    public Collection<Member> getAll() {
+        return storage.values();
     }
-
 }
 

@@ -1,11 +1,13 @@
+/*Author:
+Date: 
+*/
 package repository.impl;
 
 import domain.Librarian;
 import repository.LibrarianRepository;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -36,7 +38,7 @@ public class LibrarianRepositoryImpl implements LibrarianRepository {
 	}
 
 	@Override
-	public List<Librarian> findAll() {
-		return new ArrayList<>(storage.values());
+	public Collection<Librarian> getAll() {
+		return storage.values();
 	}
 }

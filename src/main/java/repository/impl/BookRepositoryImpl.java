@@ -1,11 +1,15 @@
+/* BookRepositoryImpl.java
+   Book repository implementation
+   Author: Nomhle Njengele (216227488)
+   Date: 13 March 2026
+*/
 package repository.impl;
 
 import domain.Book;
 import repository.BookRepository;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -14,7 +18,7 @@ public class BookRepositoryImpl implements BookRepository {
 	private final Map<String, Book> storage = new HashMap<>();
 
 	private String keyFor(Book book) {
-		return String.valueOf(book.hashCode());
+		return book.hashCode() + "";
 	}
 
 	@Override
@@ -40,7 +44,7 @@ public class BookRepositoryImpl implements BookRepository {
 	}
 
 	@Override
-	public List<Book> findAll() {
-		return new ArrayList<>(storage.values());
+	public Collection<Book> getAll() {
+		return storage.values();
 	}
 }
