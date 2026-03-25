@@ -1,15 +1,10 @@
-
-/*
-   Loan Factory Test
-   Author: Sinazo Ntsimbi (22765208)
-   Date: 22 March 2026.
-*/
-
-package factory;
-/*
-*Author: Sinazo Ntsimbi
-* 222765208
+/**
+ *Author: Sinazo Ntsimbi
+ * 222765208
+ *
  */
+package factory;
+
 import domain.Loan;
 import org.junit.jupiter.api.Test;
 
