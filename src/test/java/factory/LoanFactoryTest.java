@@ -1,3 +1,10 @@
+
+/*
+   Loan Factory Test
+   Author: Sinazo Ntsimbi (22765208)
+   Date: 22 March 2026.
+*/
+
 package factory;
 /*
 *Author: Sinazo Ntsimbi
@@ -5,6 +12,7 @@ package factory;
  */
 import domain.Loan;
 import org.junit.jupiter.api.Test;
+
 import java.time.LocalDate;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThrows;

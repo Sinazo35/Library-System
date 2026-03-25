@@ -6,26 +6,30 @@ package factory;
 
 
 import domain.Reservation;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ReservationFactoryTest {
 
     @Test
-    void shouldcreateReservation(){
+    void shouldCreateReservation(){
 
 
-        Reservation reservation = ReservationFactory.createReservation("001", LocalDate.now(), "Available", LocalDate.now());
+        Reservation reservation = new Reservation.Builder("001",LocalDate.now( ),"Available")
 
-        assertEquals("001",reservation.getReservationID());
-        assertEquals(LocalDate.now(),reservation.getDate());
-        assertEquals("Available", reservation.getStatus());
-        assertEquals(LocalDate.now(),reservation.getExpiryDate());
+                .setExpiryDate(LocalDate.now())
+                .build();
+
+        Assertions.assertEquals("001", reservation.getReservationID());
+        Assertions.assertEquals(LocalDate.now(), reservation.getDate());
+        Assertions.assertEquals("Available", reservation.getStatus());
+        Assertions.assertEquals(LocalDate.now(), reservation.getExpiryDate());
 
     }
 
@@ -68,7 +72,7 @@ public class ReservationFactoryTest {
                 .setExpiryDate(LocalDate.now())
                 .build();
 
-        assertEquals(date, reservation.getDate());
+        Assertions.assertEquals(date, reservation.getDate());
     }
 
     @Test
@@ -88,7 +92,7 @@ public class ReservationFactoryTest {
                 .setExpiryDate(LocalDate.now())
                 .build();
 
-        assertEquals(expiryDate, reservation.getExpiryDate());
+        Assertions.assertEquals(expiryDate, reservation.getExpiryDate());
 
     }
 }

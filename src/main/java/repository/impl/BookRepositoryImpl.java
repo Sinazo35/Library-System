@@ -1,15 +1,14 @@
+/* BookRepositoryImpl.java
+   Book repository implementation
+   Author: Nomhle Njengele (216227488)
+   Date: 13 March 2026
+*/
 package repository.impl;
-
-
-/*
-  Author: Nomhle Ngengele 216227488
-  Date: 16 March 2026
-* */
-
 
 import domain.Book;
 import repository.BookRepository;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -43,5 +42,9 @@ public class BookRepositoryImpl implements BookRepository {
 	public boolean delete(String id) {
 		return storage.remove(id) != null;
 	}
-	//End or program
+
+	@Override
+	public Collection<Book> getAll() {
+		return storage.values();
+	}
 }

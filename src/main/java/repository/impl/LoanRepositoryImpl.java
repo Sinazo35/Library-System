@@ -7,6 +7,7 @@ package repository.impl;
 import domain.Loan;
 import repository.LoanRepository;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -40,4 +41,10 @@ public class LoanRepositoryImpl implements LoanRepository {
 	public boolean delete(String id) {
 		return storage.remove(id) != null;
 	}
+
+	@Override
+	public Collection<Loan> getAll() {
+		return storage.values();
+	}
 }
+

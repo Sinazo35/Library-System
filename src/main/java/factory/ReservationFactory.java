@@ -1,9 +1,9 @@
 /* ReservationFactory.java
    Reservation factory class
-   
+   Author: Abulele Ntwanambi 218276400
+   Date: 16 March 2026
 */
-//Author: Abulele Ntwanambi 218276400
-//Date: 16 March 2026
+
 
 package factory;
 
@@ -25,6 +25,10 @@ public class ReservationFactory
 
                 .build();
 
+    }
+    public static int counter =1;
+    public static String generateID(){
+        return String.format("%03d",counter++);
     }
 }
 

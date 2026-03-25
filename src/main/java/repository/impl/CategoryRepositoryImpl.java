@@ -1,4 +1,5 @@
-/*Author: Ngwana Tiyani 231266731
+/* 
+Author: Ngwana Tiyani 231266731
 Date: 16 March 2026
 */
 
@@ -7,6 +8,7 @@ package repository.impl;
 import domain.Category;
 import repository.CategoryRepository;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +40,10 @@ public class CategoryRepositoryImpl implements CategoryRepository {
 		return storage.remove(id) != null;
 	}
 
+	@Override
+	public Collection<Category> getAll() {
+		return storage.values();
+	}
 
 	@Override
 	public Optional<Category> findByName(String name) {
@@ -59,3 +65,5 @@ public class CategoryRepositoryImpl implements CategoryRepository {
 				.anyMatch(category -> category.getName().equalsIgnoreCase(name));
 	}
 }
+
+
