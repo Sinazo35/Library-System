@@ -13,7 +13,7 @@ class MemberRepositoryImplTest {
 
     @Test
     void testCreateReadUpdateDelete() {
-        MemberRepositoryImpl repository = new MemberRepositoryImpl();
+        MemberRepositoryImpl repository = MemberRepositoryImpl.getInstance();
 
         Member member = new Member.Builder("M001", "Owen").setMemberEmail("owen@email.com").setMemberPhone("0831111111").build();
         repository.create(member);

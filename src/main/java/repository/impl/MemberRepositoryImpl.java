@@ -11,7 +11,18 @@ import java.util.Optional;
 
 public class MemberRepositoryImpl implements MemberRepository {
 
+    private static MemberRepositoryImpl instance;
     private final Map<String, Member> storage = new HashMap<>();
+
+    private MemberRepositoryImpl() {
+    }
+
+    public static synchronized MemberRepositoryImpl getInstance() {
+        if (instance == null) {
+            instance = new MemberRepositoryImpl();
+        }
+        return instance;
+    }
 
     private String keyFor(Member member) {
         return member.getMemberID();
